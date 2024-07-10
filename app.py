@@ -12,7 +12,7 @@ import operator
 import json
 
 load_dotenv()
-openai.api_key = st.secrets["openai"]["api_key"]
+openai.api_key = st.secrets.get("OPENAI_API_KEY")
 
 MAX_TOKENS = 100000
 
