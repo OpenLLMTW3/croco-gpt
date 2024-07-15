@@ -17,7 +17,7 @@ openai.api_key = st.secrets.get("OPENAI_API_KEY")
 MAX_TOKENS = 100000
 
 def main():
-    st.set_page_config(page_title="Croco GPT", layout="wide")
+    st.set_page_config(page_title="Training GPT", layout="wide")
     
     # Custom CSS
     st.markdown("""
@@ -54,7 +54,7 @@ def main():
     </div>
     """, unsafe_allow_html=True)
 
-    st.markdown("<h1 class='title'>Croco GPT</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='title'>Training GPT</h1>", unsafe_allow_html=True)
 
     # Initialize session state
     if 'messages' not in st.session_state:
